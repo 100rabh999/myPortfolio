@@ -26,7 +26,7 @@ export const Skills: React.FC = () => {
   return (
     <section id="skills" className="section skills-section" ref={containerRef}>
       <div className="container">
-        <h2 className="section-title reveal">Technical Arsenal</h2>
+        <h2 className="section-title mono reveal">Technical Skills</h2>
         
         <div className="skills-grid">
           {skills.map((category, index) => (

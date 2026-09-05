@@ -25,7 +25,7 @@ export const About: React.FC = () => {
   return (
     <section id="about" className="section about-section" ref={containerRef}>
       <div className="container">
-        <h2 className="section-title reveal">About & Philosophy</h2>
+        <h2 className="section-title mono reveal">About & Philosophy</h2>
         
         <div className="about-content reveal">
           <p className="lead-text">Building software from idea to production.</p>

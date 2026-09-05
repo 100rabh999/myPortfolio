@@ -26,7 +26,7 @@ export const Experience: React.FC = () => {
   return (
     <section id="experience" className="section experience-section" ref={containerRef}>
       <div className="container">
-        <h2 className="section-title reveal">Experience</h2>
+        <h2 className="section-title mono reveal">Professional Experience</h2>
         
         <div className="experience-timeline">
           {experiences.map((exp, index) => (

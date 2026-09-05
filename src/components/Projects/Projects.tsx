@@ -26,7 +26,7 @@ export const Projects: React.FC = () => {
   return (
     <section id="projects" className="section projects-section" ref={containerRef}>
       <div className="container">
-        <h2 className="section-title reveal">Featured Case Studies</h2>
+        <h2 className="section-title mono reveal">Featured Projects</h2>
         
         <div className="projects-grid">
           {projects.map((project, index) => (

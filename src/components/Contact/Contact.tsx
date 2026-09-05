@@ -109,7 +109,7 @@ export const Contact: React.FC = () => {
     <section id="contact" className="section contact-section" ref={containerRef}>
       <div className="container contact-container reveal">
         <div className="contact-header">
-          <h2 className="section-title">Let's Build Something</h2>
+          <h2 className="section-title mono">Get In Touch</h2>
           <p className="contact-subtitle">
             Whether you're building a web application, mobile product, AI system, SaaS platform, or something completely new, let's talk.
           </p>

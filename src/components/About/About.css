@@ -1,0 +1,38 @@
+.about-section {
+  background: var(--bg-tertiary);
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.lead-text {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.text-body p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.philosophy-quote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--accent-cyan);
+  border-left: 4px solid var(--accent-violet);
+  padding: 1rem 1.5rem;
+  margin: 2.5rem 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}

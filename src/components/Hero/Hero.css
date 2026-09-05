@@ -3,6 +3,18 @@
   display: flex;
   align-items: center;
   padding-top: 5rem;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle at 80% 50%, rgba(0, 240, 255, 0.05), transparent 50%);
+  z-index: -1;
 }
 
 .hero-content {
@@ -12,21 +24,24 @@
 .hero-title {
   font-size: 4rem;
   margin-bottom: 0.5rem;
+  text-shadow: 0 0 20px rgba(255,255,255,0.1);
 }
 
 .hero-subtitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: var(--text-secondary);
   margin-bottom: 2rem;
+  display: inline-block;
 }
 
 .hero-description {
   font-size: 1.25rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   max-width: 600px;
   margin-bottom: 3rem;
   line-height: 1.8;
+  border-left: 2px solid var(--accent-blue);
+  padding-left: 1rem;
 }
 
 .hero-actions {
@@ -41,44 +56,49 @@
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1.5rem;
-  border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 0.95rem;
   cursor: pointer;
   transition: all var(--transition-fast);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 0;
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
 }
 
 .btn-primary {
-  background: var(--text-primary);
-  color: var(--bg-primary) !important;
+  background: rgba(0, 240, 255, 0.1);
+  color: var(--accent-cyan) !important;
+  border: 1px solid var(--accent-cyan);
+  box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.1);
 }
 
 .btn-primary:hover {
-  background: #ffffff;
-  transform: translateY(-2px);
+  background: rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3), inset 0 0 20px rgba(0, 240, 255, 0.2);
 }
 
 .btn-secondary {
   background: rgba(255, 255, 255, 0.05);
   color: var(--text-primary) !important;
-  border: var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .btn-outline {
-  border: 1px solid var(--accent-cyan);
-  color: var(--accent-cyan) !important;
+  border: 1px solid var(--accent-violet);
+  color: var(--accent-violet) !important;
   background: transparent;
 }
 
 .btn-outline:hover {
-  background: rgba(0, 240, 255, 0.1);
-  box-shadow: var(--shadow-glow);
-  transform: translateY(-2px);
+  background: rgba(139, 92, 246, 0.1);
+  box-shadow: var(--shadow-glow-violet);
 }
 
 .hero-status {
@@ -86,18 +106,16 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.5rem 1rem;
-  background: rgba(59, 130, 246, 0.05);
-  border: var(--border-subtle);
-  border-radius: 100px;
-  color: var(--text-secondary);
+  background: rgba(0, 255, 65, 0.05);
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  color: var(--accent-matrix);
 }
 
 .status-indicator {
   width: 8px;
   height: 8px;
-  background: #10b981;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+  background: var(--accent-matrix);
+  box-shadow: 0 0 10px var(--accent-matrix);
   animation: pulseGlow 2s infinite;
 }
 

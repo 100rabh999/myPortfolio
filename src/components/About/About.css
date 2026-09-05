@@ -1,5 +1,7 @@
 .about-section {
   background: var(--bg-tertiary);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .about-content {
@@ -8,9 +10,14 @@
 
 .lead-text {
   font-size: 1.5rem;
-  color: var(--text-primary);
+  color: var(--accent-cyan);
   margin-bottom: 2rem;
   font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.lead-text::before {
+  content: '> ';
 }
 
 .text-body p {
@@ -23,11 +30,12 @@
 .philosophy-quote {
   font-size: 1.25rem;
   font-style: italic;
-  color: var(--accent-cyan);
-  border-left: 4px solid var(--accent-violet);
+  color: var(--accent-matrix);
+  border-left: 2px solid var(--accent-matrix);
   padding: 1rem 1.5rem;
   margin: 2.5rem 0;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 255, 65, 0.02);
+  font-family: var(--font-mono);
 }
 
 .sub-heading {
@@ -35,4 +43,6 @@
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   color: var(--text-primary);
+  display: inline-block;
+  border-bottom: 1px dashed var(--accent-violet);
 }

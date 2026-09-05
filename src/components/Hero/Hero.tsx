@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
       <div className="container hero-content">
         <h1 className="hero-title">Saurabh Singh</h1>
         <h2 className="hero-subtitle">
-          <span className="text-gradient">Senior Software Engineer</span> · Full-Stack · AI/GenAI
+          <span className="typing-effect mono text-gradient">Senior Software Engineer · AI/GenAI</span>
         </h2>
         
         <p className="hero-description">
@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
         
         <div className="hero-status mono delay-200 animate-fade-up">
           <span className="status-indicator"></span>
-          Currently: Senior Software Engineer @ Techeeez
+          <span className="status-text">&gt;_ Currently: Senior Software Engineer @ Techeeez</span>
         </div>
       </div>
     </section>

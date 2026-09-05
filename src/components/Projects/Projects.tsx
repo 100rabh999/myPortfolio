@@ -31,7 +31,8 @@ export const Projects: React.FC = () => {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <article key={project.id} className="project-card reveal" style={{ transitionDelay: `${index * 100}ms` }}>
-              <div className="project-header">
+              <div className="project-content-wrapper">
+                <div className="project-header">
                 <span className="project-category mono">{project.category}</span>
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-subtitle">{project.subtitle}</p>
@@ -73,10 +74,11 @@ export const Projects: React.FC = () => {
                 </div>
                 {project.link && (
                   <a href={project.link} className="btn-view" target="_blank" rel="noopener noreferrer">
-                    View Project
+                    [EXECUTE]
                   </a>
                 )}
               </div>
+            </div>
             </article>
           ))}
         </div>

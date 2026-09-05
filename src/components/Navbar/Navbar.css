@@ -3,9 +3,9 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(10, 10, 12, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(5, 5, 7, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: var(--border-subtle);
   z-index: 1000;
   padding: 1rem 0;
@@ -21,35 +21,46 @@
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--text-primary);
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+
+.navbar-brand::before {
+  content: '~/';
+  color: var(--accent-cyan);
 }
 
 .navbar-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
 .navbar-links a {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-secondary);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .navbar-links a:hover {
-  color: var(--text-primary);
+  color: var(--accent-cyan);
 }
 
 .navbar-cta {
   border: 1px solid var(--accent-cyan);
   padding: 0.5rem 1rem;
-  border-radius: var(--radius-sm);
+  border-radius: 0;
   color: var(--accent-cyan) !important;
   transition: all var(--transition-fast);
+  background: rgba(0, 240, 255, 0.05);
 }
 
 .navbar-cta:hover {
-  background: rgba(0, 240, 255, 0.1);
-  box-shadow: var(--shadow-glow);
+  background: rgba(0, 240, 255, 0.15);
+  box-shadow: var(--shadow-glow-cyan);
 }
 
 @media (max-width: 768px) {

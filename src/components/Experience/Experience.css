@@ -16,7 +16,7 @@
   top: 0;
   bottom: 0;
   width: 1px;
-  background: var(--border-subtle);
+  background: linear-gradient(to bottom, var(--accent-cyan), transparent);
 }
 
 .experience-item {
@@ -34,7 +34,6 @@
   top: 6px;
   width: 9px;
   height: 9px;
-  border-radius: 50%;
   background: var(--bg-primary);
   border: 1px solid var(--accent-cyan);
   transition: all var(--transition-fast);
@@ -42,7 +41,7 @@
 
 .experience-item:hover::before {
   background: var(--accent-cyan);
-  box-shadow: var(--shadow-glow);
+  box-shadow: var(--shadow-glow-cyan);
 }
 
 .experience-meta {
@@ -52,23 +51,26 @@
 }
 
 .experience-duration {
-  color: var(--accent-cyan);
+  color: var(--accent-matrix);
   font-size: 0.9rem;
 }
 
 .experience-location {
   color: var(--text-muted);
   font-size: 0.85rem;
+  font-family: var(--font-mono);
 }
 
 .tag {
   display: inline-block;
   padding: 0.2rem 0.5rem;
-  border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--text-secondary);
   font-size: 0.75rem;
+  font-family: var(--font-mono);
   width: fit-content;
+  text-transform: uppercase;
 }
 
 .experience-content {
@@ -86,6 +88,7 @@
   font-size: 1.1rem;
   color: var(--text-secondary);
   font-weight: 500;
+  font-family: var(--font-mono);
 }
 
 .experience-description {
@@ -107,10 +110,11 @@
 }
 
 .experience-achievements li::before {
-  content: '▹';
+  content: '>';
   position: absolute;
   left: 0;
   color: var(--accent-violet);
+  font-family: var(--font-mono);
 }
 
 .experience-tech {
@@ -122,10 +126,10 @@
 
 .tech-badge {
   font-size: 0.8rem;
-  color: var(--accent-blue);
-  background: rgba(59, 130, 246, 0.1);
+  color: var(--accent-cyan);
+  border: 1px dashed rgba(0, 240, 255, 0.3);
   padding: 0.3rem 0.8rem;
-  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
 }
 
 @media (min-width: 768px) {

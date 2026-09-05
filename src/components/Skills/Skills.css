@@ -11,7 +11,8 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+  box-shadow: 0 0 10px var(--accent-cyan);
 }
 
 .skills-grid {
@@ -21,16 +22,38 @@
 }
 
 .skill-category {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: var(--radius-md);
+  background: rgba(0, 240, 255, 0.02);
+  border: 1px solid rgba(0, 240, 255, 0.1);
   padding: 2rem;
   transition: all var(--transition-fast);
+  position: relative;
+}
+
+.skill-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--accent-cyan);
+  border-left: 2px solid var(--accent-cyan);
+}
+
+.skill-category::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid var(--accent-cyan);
+  border-right: 2px solid var(--accent-cyan);
 }
 
 .skill-category:hover {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(59, 130, 246, 0.2);
+  background: rgba(0, 240, 255, 0.05);
+  box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.1);
 }
 
 .skill-title {
@@ -38,14 +61,20 @@
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-family: var(--font-mono);
 }
 
 .skill-title::before {
-  content: '/>';
+  content: '[ ';
+  color: var(--text-muted);
+}
+
+.skill-title::after {
+  content: ' ]';
   color: var(--text-muted);
 }
 
@@ -59,15 +88,16 @@
   color: var(--text-primary);
   background: var(--bg-tertiary);
   padding: 0.5rem 1rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.9rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all var(--transition-fast);
+  font-family: var(--font-mono);
 }
 
 .skill-item:hover {
-  border-color: var(--accent-violet);
-  color: var(--accent-cyan);
+  border-color: var(--accent-matrix);
+  color: var(--accent-matrix);
+  box-shadow: var(--shadow-glow-matrix);
   transform: translateY(-2px);
 }
 

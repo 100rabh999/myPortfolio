@@ -119,10 +119,24 @@
   animation: pulseGlow 2s infinite;
 }
 
+@media (max-width: 1024px) {
+  .hero { padding-top: 6rem; }
+  .hero-title { font-size: 3.5rem; }
+  .hero-subtitle { font-size: 1.3rem; }
+  .hero-description { font-size: 1.15rem; margin-bottom: 2.5rem; }
+}
+
 @media (max-width: 768px) {
-  .hero-title { font-size: 3rem; }
-  .hero-subtitle { font-size: 1.5rem; }
-  .hero-description { font-size: 1.1rem; }
-  .hero-actions { flex-direction: column; width: 100%; }
+  .hero { padding-top: 5rem; }
+  .hero-title { font-size: 2.5rem; }
+  .hero-subtitle { font-size: 1.2rem; }
+  .hero-description { font-size: 1rem; border-left: none; padding-left: 0; text-align: left; }
+  .hero-actions { flex-direction: column; width: 100%; gap: 1rem; }
   .btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .hero-description { font-size: 0.95rem; }
 }

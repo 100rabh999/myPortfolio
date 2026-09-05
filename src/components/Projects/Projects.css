@@ -207,8 +207,40 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .project-content-wrapper {
+    padding: 2rem;
+  }
+  .projects-grid {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .project-content-wrapper {
     padding: 1.5rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .project-title {
+    font-size: 1.75rem;
+  }
+  .project-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-content-wrapper {
+    padding: 1rem;
+  }
+  .project-title {
+    font-size: 1.5rem;
+  }
+  .btn-view {
+    width: 100%;
+    text-align: center;
   }
 }

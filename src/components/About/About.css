@@ -46,3 +46,15 @@
   display: inline-block;
   border-bottom: 1px dashed var(--accent-violet);
 }
+
+@media (max-width: 1024px) {
+  .lead-text { font-size: 1.3rem; }
+  .philosophy-quote { font-size: 1.15rem; margin: 2rem 0; padding: 1rem; }
+}
+
+@media (max-width: 768px) {
+  .lead-text { font-size: 1.2rem; margin-bottom: 1.5rem; }
+  .text-body p { font-size: 1rem; }
+  .philosophy-quote { font-size: 1rem; padding: 0.8rem; margin: 1.5rem 0; }
+  .sub-heading { font-size: 1.3rem; margin-top: 2rem; }
+}

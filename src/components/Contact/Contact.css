@@ -98,8 +98,30 @@
   color: #ef4444;
 }
 
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 5rem 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 1rem;
+  }
   .contact-form-wrapper {
     padding: 1.5rem;
+  }
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-wrapper {
+    padding: 1rem;
+  }
+  .submit-btn {
+    padding: 0.8rem;
+    font-size: 1rem;
   }
 }

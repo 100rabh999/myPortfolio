@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import './Navbar.css';
 
 export const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <nav className="navbar">
       <div className="container navbar-content">
         <a href="#" className="navbar-brand">Saurabh Singh</a>
-        <div className="navbar-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact" className="navbar-cta">Contact</a>
+        
+        <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle menu">
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
+          <a href="#about" onClick={() => setIsOpen(false)}>About</a>
+          <a href="#experience" onClick={() => setIsOpen(false)}>Experience</a>
+          <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
+          <a href="#contact" className="navbar-cta" onClick={() => setIsOpen(false)}>Contact</a>
         </div>
       </div>
     </nav>

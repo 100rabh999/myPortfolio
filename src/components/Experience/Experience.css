@@ -152,3 +152,15 @@
     align-items: flex-end;
   }
 }
+
+@media (max-width: 767px) {
+  .experience-item {
+    gap: 0.5rem;
+  }
+  .experience-role {
+    font-size: 1.25rem;
+  }
+  .experience-company {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,194 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 3761 >>
+stream
+BT
+/F1 20 Tf
+40 750 Td
+(SAURABH SINGH) Tj
+/F1 11 Tf
+0 -18 Td
+(Senior Software Engineer | Full-Stack Developer | AI/GenAI Engineer) Tj
+/F1 9 Tf
+0 -15 Td
+(Phone: +91 70581 07207 | Email: saurabhsingh2001.sk@gmail.com | Location: Maharashtra, India) Tj
+0 -13 Td
+(GitHub: github.com/100rabh999 | LinkedIn: linkedin.com/in/saurabh-singh-59b323241) Tj
+0 -22 Td
+/F1 11 Tf
+(PROFESSIONAL SUMMARY) Tj
+/F1 8.5 Tf
+0 -13 Td
+(Software Engineer specializing in full-stack development, AI-powered applications, enterprise software, and industrial automation.) Tj
+0 -11 Td
+(Experienced in independently managing direct client engagements: requirements, solution architecture, hardware interfacing, deployment, support.) Tj
+0 -11 Td
+(Hands-on experience building hardware-integrated applications: DWS, barcode scanners, cameras, X-ray integration, Pick-to-Light warehouse systems.) Tj
+0 -18 Td
+/F1 11 Tf
+(PROFESSIONAL EXPERIENCE) Tj
+0 -14 Td
+/F1 10 Tf
+(Senior Software Engineer  |  Techeeez \(Goregaon, Maharashtra\)  |  June 2026 - Present) Tj
+/F1 8.5 Tf
+0 -12 Td
+(* Design and develop scalable, production-ready web and mobile applications across the complete software development lifecycle.) Tj
+0 -11 Td
+(* Develop backend services, REST APIs, and database-driven architectures using Node.js, React, Next.js, Flutter, PostgreSQL, Prisma, Firebase.) Tj
+0 -16 Td
+/F1 10 Tf
+(Independent Software Consultant & Full-Stack Developer  |  Independent Engagements  |  2025 - Present) Tj
+/F1 8.5 Tf
+0 -12 Td
+(* Manage direct client engagements end-to-end: client consultation, technical estimations, architecture, development, deployment, and support.) Tj
+0 -11 Td
+(* Selected Clients: Shadowfax, Wabtec Corporation, KAMA Ayurveda, Delite Engineering, Sidhicon Automation, Mascon, Anokhee, Redwings.) Tj
+0 -11 Td
+(* Deliver hardware-integrated industrial applications \(DWS, Pick-to-Light, scanners, cameras, and local database sync\).) Tj
+0 -16 Td
+/F1 10 Tf
+(Junior Software Engineer  |  Aman Satija and Co. \(Goregaon, Maharashtra\)  |  October 2022 - May 2026) Tj
+/F1 8.5 Tf
+0 -12 Td
+(* Developed frontend and backend components for web applications using JavaScript, Python, PHP, Laravel, Node.js, and SQL databases.) Tj
+0 -11 Td
+(* Architected database-driven workflows, third-party API integrations, debugging, and continuous production maintenance.) Tj
+0 -16 Td
+/F1 9.5 Tf
+(Internships: Machine Learning Intern \(CodSoft, 2023\) | Web Developer \(WriteJet, 2023\) | Java Web Developer \(SDAC, 2023\)) Tj
+0 -22 Td
+/F1 11 Tf
+(SELECTED INDUSTRIAL AUTOMATION & CLIENT SOLUTIONS) Tj
+0 -14 Td
+/F1 9.5 Tf
+(1. Dynamic Dimension & Weighing System \(DWS\) -- Client: Shadowfax \(Deployments: Mumbai, Bengaluru, Kolkata, Lucknow\)) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* Integrated measurement systems, barcode scanners, high-speed cameras, and X-ray images with local DB and cloud API synchronization.) Tj
+0 -15 Td
+/F1 9.5 Tf
+(2. Pick-to-Light Warehouse Automation System \(PTL\) -- Client: Wabtec Corporation \(Deployment: Rohtak, Haryana\)) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* Scanner-integrated PTL controller orchestrating light indications, multi-scanner inputs, label printing, and day-wise local DB logs.) Tj
+0 -15 Td
+/F1 9.5 Tf
+(3. Static Dimension & Weighing System \(DWS\) -- Client: KAMA Ayurveda \(Deployments: Coimbatore & Mumbai\)) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* Hardware-integrated dimension capture, configurable receipt generation, local failover database, and automated cloud sync.) Tj
+0 -15 Td
+/F1 9.5 Tf
+(4. Enterprise Solutions: Sidhicon \(Business Suite\), Mascon \(Material Certs\), Anokhee \(E-Commerce\), Redwings \(Logistics\)) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* Delivered end-to-end custom systems spanning inventory management, quotation engines, material certification, and freight portals.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 2999 >>
+stream
+BT
+/F1 11 Tf
+40 750 Td
+(AI, GENAI & DIGITAL PRODUCT ENGINEERING) Tj
+0 -15 Td
+/F1 9.5 Tf
+(1. MobCast AI / TTCV2 -- AI-Powered Course Generation Platform) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* Living Context engine for context-aware conversations, course blueprint generation, scene scripts, and AI image orchestration.) Tj
+0 -11 Td
+(* Bounded regeneration, structured JSON output validation, Google Gemini & OpenRouter integrations with S3 asset pipeline.) Tj
+0 -16 Td
+/F1 9.5 Tf
+(2. Nirmil AI -- Financial Announcement Intelligence Platform) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* Automated NSE/BSE exchange monitors, multi-page financial PDF extraction, keyword processing, and Google Gemini document analysis.) Tj
+0 -16 Td
+/F1 9.5 Tf
+(3. Nirmil Financial Results Terminal -- Chrome Extension \(Manifest V3\) & Dashboard) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* Service Worker architecture, CSV-configurable rule filtering, automated PDF retrieval, and structured JSON results extraction.) Tj
+0 -16 Td
+/F1 9.5 Tf
+(4. DigiMaker -- Political Banner Creation Platform) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* Canvas serialization engine, administrative Next.js web portal, Express API, SQLite/Prisma backend, and Flutter cross-platform mobile app.) Tj
+0 -22 Td
+/F1 11 Tf
+(TECHNICAL SKILLS) Tj
+/F1 8.5 Tf
+0 -14 Td
+(* Languages: JavaScript, TypeScript, Python, PHP, Java, SQL, Dart, HTML5, CSS3) Tj
+0 -12 Td
+(* Frontend: React.js, Next.js, Vite, Flutter, Tailwind CSS, Material UI, Bootstrap, Responsive Design, Canvas UI) Tj
+0 -12 Td
+(* Backend & APIs: Node.js, Express.js, Laravel, RESTful APIs, Backend Architecture, Authentication, WebSockets & Real-Time) Tj
+0 -12 Td
+(* Databases & ORM: PostgreSQL, MySQL, SQLite, Prisma, Sequelize) Tj
+0 -12 Td
+(* AI & GenAI: Google Gemini, Google GenAI, OpenRouter, LLMs, Prompt Engineering, Context-Aware AI, PDF Intelligence, Structured JSON) Tj
+0 -12 Td
+(* Mobile Development: Flutter, Dart, Cross-Platform Mobile Apps, Mobile API Integration) Tj
+0 -12 Td
+(* Industrial & Hardware: Dimension & Weighing Systems \(DWS\), Barcode Scanners, Pick-to-Light \(PTL\), Cameras, X-Ray, Local DBs) Tj
+0 -12 Td
+(* Cloud & DevOps: Firebase, Oracle Cloud, AWS/S3, Linux, Nginx, Docker, Git, GitHub) Tj
+0 -12 Td
+(* Consulting & SDLC: System Architecture, Database Design, Full SDLC, Estimation, Client Communication, Deployment, Support) Tj
+0 -22 Td
+/F1 11 Tf
+(EDUCATION) Tj
+/F1 9.5 Tf
+0 -14 Td
+(Master of Computer Science \(M.Sc. CS\)  |  Thakur College of Science and Commerce  |  2024 - 2026) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* CGPA: 9.8 / 10  |  Specialization in advanced computing, distributed architectures, and intelligent systems.) Tj
+0 -14 Td
+/F1 9.5 Tf
+(Bachelor of Computer Science \(B.Sc. CS\)  |  Thakur College of Science and Commerce  |  2021 - 2024) Tj
+/F1 8.5 Tf
+0 -11 Td
+(* CGPA: 9.6 / 10  |  Distinction in algorithms, data structures, database engineering, and software development.) Tj
+0 -14 Td
+/F1 9 Tf
+(Higher Secondary Certificate \(12th - PCMB\): 96.00%  |  Secondary School Certificate \(10th\): 91.20%) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000004060 00000 n 
+0000004186 00000 n 
+0000007237 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+7307
+%%EOF

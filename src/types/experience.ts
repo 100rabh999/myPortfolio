@@ -8,4 +8,5 @@ export interface Experience {
   description: string;
   achievements: string[];
   technologies: string[];
+  clients?: string[];
 }

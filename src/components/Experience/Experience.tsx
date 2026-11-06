@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { experiences } from '../../data/experience';
+import { Briefcase } from 'lucide-react';
 import './Experience.css';
 
 export const Experience: React.FC = () => {
@@ -30,7 +31,7 @@ export const Experience: React.FC = () => {
         
         <div className="experience-timeline">
           {experiences.map((exp, index) => (
-            <div key={exp.id} className="experience-item reveal" style={{ transitionDelay: `${index * 100}ms` }}>
+            <div key={exp.id} className="experience-item reveal" style={{ transitionDelay: `${index * 80}ms` }}>
               <div className="experience-meta">
                 <span className="experience-duration mono">{exp.duration}</span>
                 <span className="experience-location">{exp.location}</span>
@@ -48,6 +49,20 @@ export const Experience: React.FC = () => {
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
+
+                {exp.clients && exp.clients.length > 0 && (
+                  <div className="experience-clients-block">
+                    <span className="clients-label mono">
+                      <Briefcase size={14} style={{ display: 'inline', marginRight: '6px' }} />
+                      Selected Client Engagements:
+                    </span>
+                    <div className="clients-tags">
+                      {exp.clients.map((client, cIdx) => (
+                        <span key={cIdx} className="client-badge">{client}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 
                 <div className="experience-tech">
                   {exp.technologies.map((tech, i) => (

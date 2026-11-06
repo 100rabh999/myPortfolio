@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#070a10" />
+    </linearGradient>
+
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+    
+    <radialGradient id="violetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+
+  <circle cx="150" cy="120" r="380" fill="url(#cyanGlow)" />
+  <circle cx="1080" cy="180" r="420" fill="url(#violetGlow)" />
+  <circle cx="920" cy="540" r="360" fill="url(#blueGlow)" />
+
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#0d1424" fill-opacity="0.65" stroke="url(#borderGrad)" stroke-width="1.5" />
+
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="850" y1="40" x2="850" y2="300" />
+    <line x1="930" y1="40" x2="930" y2="300" />
+    <line x1="1010" y1="40" x2="1010" y2="300" />
+    <line x1="1090" y1="40" x2="1090" y2="300" />
+    <line x1="800" y1="100" x2="1160" y2="100" />
+    <line x1="800" y1="180" x2="1160" y2="180" />
+    <line x1="800" y1="260" x2="1160" y2="260" />
+  </g>
+
+  <!-- Badge -->
+  <rect x="90" y="95" width="460" height="42" rx="21" fill="#0369a1" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.8" />
+  <circle cx="112" cy="116" r="5" fill="#38bdf8" />
+  <text x="128" y="122" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace" font-size="15" font-weight="600" letter-spacing="1.2">&gt;_ SENIOR SOFTWARE ENGINEER · FULL-STACK · AI</text>
+
+  <!-- Name -->
+  <text x="90" y="235" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="-1.5">Saurabh Singh</text>
+
+  <!-- Subtitle -->
+  <text x="90" y="295" fill="url(#textGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Full-Stack Development | AI/GenAI | Industrial Automation</text>
+
+  <!-- Description -->
+  <text x="90" y="348" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400">Architecting scalable web/mobile apps, LLM pipelines, and hardware-integrated DWS systems.</text>
+
+  <!-- Tech Tags -->
+  <rect x="90" y="395" width="200" height="42" rx="8" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1" />
+  <text x="110" y="422" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="16" font-weight="500">React · Next.js · Node</text>
+
+  <rect x="305" y="395" width="210" height="42" rx="8" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1" />
+  <text x="325" y="422" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="16" font-weight="500">Google Gemini · GenAI</text>
+
+  <rect x="530" y="395" width="220" height="42" rx="8" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1" />
+  <text x="550" y="422" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="16" font-weight="500">Industrial DWS · Pick-Light</text>
+
+  <rect x="765" y="395" width="195" height="42" rx="8" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1" />
+  <text x="785" y="422" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="16" font-weight="500">Flutter · Python · SQL</text>
+
+  <!-- Divider -->
+  <line x1="90" y1="475" x2="1110" y2="475" stroke="#334155" stroke-width="1" stroke-opacity="0.7" />
+
+  <!-- Footer -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace" font-size="17">
+    <text x="90" y="525" fill="#64748b">+91 70581 07207 · <tspan fill="#cbd5e1" font-weight="600">Maharashtra, IN</tspan></text>
+    <text x="440" y="525" fill="#64748b">github.com/<tspan fill="#cbd5e1" font-weight="600">100rabh999</tspan></text>
+    <text x="1110" y="525" fill="#38bdf8" text-anchor="end" font-weight="600">saurabh-singh-portfolio-03.web.app</text>
+  </g>
+</svg>

@@ -1,122 +1,302 @@
 import type { Project } from '../types/project';
 
 export const projects: Project[] = [
+  // 1. Shadowfax DWS
   {
-    id: 'nirmil-ai',
-    title: 'Nirmil AI',
-    subtitle: 'NSE/BSE Announcement Intelligence Platform',
-    problem: 'Processing thousands of financial announcements from NSE/BSE manually is slow and error-prone, requiring automated intelligence to extract key information.',
-    architecture: 'Automated monitoring system paired with an AI-driven document processing pipeline that parses PDFs and surfaces keywords.',
+    id: 'shadowfax-dws',
+    title: 'Dynamic Dimension & Weighing System (DWS)',
+    subtitle: 'High-Throughput Logistics Measurement, Barcode & X-Ray Integration',
+    client: 'Shadowfax',
+    deployment: 'Production Deployment: Mumbai, Bengaluru, Kolkata, and Lucknow, India',
+    problem: 'Processing high-throughput logistics shipments requires accurate dimension measurement, fast barcode capture, and X-ray image auditing without operational latency.',
+    architecture: 'Real-time industrial capture architecture bridging dynamic dimension measurement machines, handheld/fixed barcode scanners, and high-speed cameras to local databases with cloud API synchronization.',
     engineering: [
-      'Built automated monitors for real-time NSE/BSE announcement fetching.',
-      'Developed PDF processing pipelines to handle complex financial documents.',
-      'Integrated GenAI for intelligent information extraction and summarization.'
+      'Captured continuous dimension and weighing telemetry from industrial measurement systems.',
+      'Integrated scanner-generated barcode payloads and camera-based image capture into unified transaction records.',
+      'Managed high-resolution barcode images and X-ray visual inspection streams received from cameras.',
+      'Implemented robust local database persistence for measurement records with zero data loss during network interruptions.',
+      'Engineered cloud API connectivity for reliable real-time and batch transmission of collected operational metrics.'
     ],
     keySystems: [
-      'Announcement monitoring',
-      'AI document processing',
-      'Financial intelligence',
-      'Structured extraction'
+      'Dynamic Dimension & Weighing',
+      'Barcode & Camera Integration',
+      'X-Ray Image Handling',
+      'Local Database Persistence',
+      'Cloud API Telemetry'
     ],
-    technologies: ['Node.js', 'Google Gemini', 'GenAI', 'PDF Processing', 'APIs', 'Automation'],
-    category: 'AI / GenAI'
+    technologies: ['Industrial IoT', 'Measurement Systems', 'Barcode Scanners', 'Camera Integration', 'X-Ray Imaging', 'Local DB', 'Cloud APIs', 'Real-Time'],
+    category: 'Industrial & Automation'
   },
+
+  // 2. Wabtec Pick-to-Light
+  {
+    id: 'wabtec-ptl',
+    title: 'Pick-to-Light Warehouse Automation System',
+    subtitle: 'Scanner-Integrated Operator Guidance & Inventory Picking Solution',
+    client: 'Wabtec Corporation',
+    deployment: 'Production Deployment: Rohtak, Haryana, India',
+    problem: 'Manual component picking in locomotive and manufacturing warehouses suffered from human picking errors, slow throughput, and inefficient paper-based logging.',
+    architecture: 'Hardware-coordinated Pick-to-Light (PTL) controller integrating multi-barcode scanning workflows, physical light indicators, day-wise local transaction logging, and automated label printing.',
+    engineering: [
+      'Integrated multiple industrial barcode scanners directly into component-picking operational flows.',
+      'Engineered digital control of physical PTL indicator lights to visually guide operators to precise bin locations.',
+      'Implemented local database storage for day-wise component-picking transactions and operator audits.',
+      'Developed on-demand barcode generation and industrial label-printing functionality.',
+      'Coordinated sub-second synchronization between scanner input, physical picking verification, and indicator state transitions.'
+    ],
+    keySystems: [
+      'Pick-to-Light Hardware Control',
+      'Multi-Scanner Coordination',
+      'Barcode & Label Printing',
+      'Local Operational Logging',
+      'Warehouse Workflow Automation'
+    ],
+    technologies: ['Pick-to-Light (PTL)', 'Barcode Scanners', 'Hardware Controller', 'Thermal Label Printing', 'Local Database', 'Automation'],
+    category: 'Industrial & Automation'
+  },
+
+  // 3. KAMA Ayurveda DWS
+  {
+    id: 'kama-ayurveda-dws',
+    title: 'Static Dimension & Weighing System (DWS)',
+    subtitle: 'Machine-Integrated Dimension Capture & Configurable Receipt Automation',
+    client: 'KAMA Ayurveda',
+    deployment: 'Production Deployment: Coimbatore & Mumbai, India',
+    problem: 'Warehouse packing stations needed automated, tamper-proof parcel dimensioning, custom branded receipts, and instant cloud dispatch logging.',
+    architecture: 'Direct machine-integrated DWS platform capturing dimensional metrics, generating customizable dispatch receipts, and streaming payload data to cloud servers.',
+    engineering: [
+      'Captured dimension and weight data directly from hardware measurement equipment with high precision.',
+      'Supported dynamically configurable receipt fields based on shifting logistics partner and operational criteria.',
+      'Generated customized, professional measurement and dispatch receipts on demand.',
+      'Implemented local database storage with failover caching to guarantee zero operational downtime.',
+      'Engineered automatic cloud data transmission for central logistics reporting.'
+    ],
+    keySystems: [
+      'Static DWS Integration',
+      'Configurable Receipt Engine',
+      'Local-to-Cloud Sync',
+      'Dispatch Validation'
+    ],
+    technologies: ['Measurement Hardware', 'Receipt Generation', 'Local Database', 'Cloud Synchronization', 'Industrial Automation'],
+    category: 'Industrial & Automation'
+  },
+
+  // 4. Delite Engineering DWS
+  {
+    id: 'delite-dws',
+    title: 'Dynamic Dimension & Weighing System (DWS)',
+    subtitle: 'Industrial Record Management & Barcode Imaging Suite',
+    client: 'Delite Engineering Pvt. Ltd.',
+    deployment: 'Client Office / Manufacturing Facility Installation',
+    problem: 'Industrial equipment manufacturing needed unified management for dynamic dimensional verification, barcode image association, and historical record auditing.',
+    architecture: 'Dynamic measurement and image ingestion system pairing high-throughput weighing cells with localized database record management.',
+    engineering: [
+      'Captured, validated, and stored dynamic dimension and weight parameters at production line speeds.',
+      'Managed and indexed barcode image storage directly mapped to operational measurement records.',
+      'Implemented secure local database-based historical data management and reporting.'
+    ],
+    keySystems: [
+      'Dynamic DWS Capture',
+      'Barcode Image Storage',
+      'Local Data Management',
+      'Operational Auditing'
+    ],
+    technologies: ['Dynamic DWS', 'Barcode Imaging', 'Local Database', 'System Integration', 'Desktop / Edge Runtime'],
+    category: 'Industrial & Automation'
+  },
+
+  // 5. MobCast AI / TTCV2
   {
     id: 'mobcast-ai',
     title: 'MobCast AI / TTCV2',
-    subtitle: 'AI-Powered Course Generation Platform',
-    problem: 'Creating structured digital learning experiences from raw requirements and source material is a time-consuming manual process.',
-    architecture: 'Intelligent consultation workflow powered by LLMs (Gemini/OpenRouter) that transforms context into structured course blueprints, slides, and assets.',
+    subtitle: 'AI-Powered Course Generation & Intelligent Consultation Platform',
+    client: 'MobCast',
+    problem: 'Authoring structured, interactive digital courses from raw training documents and organizational guidelines is a labor-intensive, multi-week manual process.',
+    architecture: 'Multi-stage intelligent consultation workflow powered by LLMs (Google Gemini & OpenRouter) that transforms context into structured course blueprints, scenes, and generated assets.',
     engineering: [
-      'Engineered a Living Context engine for context-aware conversations.',
-      'Developed bounded regeneration and AI workflow orchestration to ensure structured valid JSON output.',
-      'Integrated S3-based asset handling and AI image generation.'
+      'Engineered a Living Context engine for context-aware interactive consultation conversations.',
+      'Developed bounded regeneration and AI workflow orchestration ensuring deterministic, strictly valid JSON output.',
+      'Architected course blueprint and slide/scene generation from uploaded reference documents and video scripts.',
+      'Integrated AI image generation, corporate brand configuration, and S3-based digital asset pipelines.',
+      'Integrated multi-provider AI backends (Google Gemini, OpenRouter) with fallbacks and rate-limit mitigation.'
     ],
     keySystems: [
-      'Intelligent consultation workflow',
-      'Living Context engine',
-      'Course blueprint generation',
-      'AI workflow orchestration'
+      'Intelligent Consultation Engine',
+      'Living Context Memory',
+      'Course Blueprint Generation',
+      'Structured JSON AI Orchestration',
+      'Brand & Asset Pipelines'
     ],
-    technologies: ['React', 'TypeScript', 'Gemini', 'OpenRouter', 'LLMs', 'REST APIs', 'S3'],
+    technologies: ['Python', 'Google Gemini', 'OpenRouter', 'LLMs', 'Prompt Engineering', 'Structured JSON', 'React', 'AWS S3'],
     category: 'AI / GenAI'
   },
+
+  // 6. Nirmil AI
   {
-    id: 'dws',
-    title: 'DWS System',
-    subtitle: 'Real-Time Industrial Data & Image Integration',
-    problem: 'Industrial environments require unified processing of disjointed data sources (barcodes, sensors, images) with zero latency.',
-    architecture: 'Real-time event processing architecture bridging hardware (scanners, microcontrollers, IP cameras) and software via WebSockets.',
+    id: 'nirmil-ai',
+    title: 'Nirmil AI — Financial Announcement Intelligence',
+    subtitle: 'Automated NSE/BSE Exchange Monitoring & Document Intelligence Pipeline',
+    problem: 'Financial analysts and investment teams are inundated by thousands of daily PDF announcements from Indian stock exchanges (NSE/BSE), making manual extraction slow and error-prone.',
+    architecture: 'Automated exchange polling and ingestion service coupled with a Gemini-powered document processing pipeline that parses complex multi-page financial PDFs and surfaces key intelligence.',
     engineering: [
-      'Integrated barcode scanners, sensor data, and IP camera images into a single workflow.',
-      'Implemented FTP image capture and image-directory monitoring.',
-      'Built a live dashboard with fault-tolerant reconnect handling over LAN.'
+      'Engineered automated real-time monitors to continuously fetch announcements from NSE and BSE portals.',
+      'Built resilient PDF downloading and multi-format document processing pipelines.',
+      'Integrated Google Gemini to parse financial disclosures, board resolutions, and market-moving events.',
+      'Implemented intelligent keyword filtering and structured financial summarization workflows.'
     ],
     keySystems: [
-      'Hardware integration',
-      'Real-time event processing',
-      'WebSocket communication',
-      'Fault-tolerant connections'
+      'Exchange Announcement Monitor',
+      'PDF Document Intelligence Pipeline',
+      'Google Gemini Financial Parser',
+      'Structured Financial Extraction'
     ],
-    technologies: ['Real-Time Systems', 'Hardware Integration', 'Networking', 'WebSockets', 'Backend Engineering'],
-    category: 'Real-time / Systems'
+    technologies: ['Python', 'Node.js', 'Google Gemini', 'GenAI', 'PDF Processing', 'REST APIs', 'Automation'],
+    category: 'AI / GenAI'
   },
-  {
-    id: 'digimaker',
-    title: 'Digimaker',
-    subtitle: 'Political Banner Creation Platform',
-    problem: 'Need for a unified digital design platform allowing seamless creation and management of political banners across web and mobile.',
-    architecture: 'Admin Web -> Backend API -> Database -> Flutter App with canvas-based design and cross-platform template processing.',
-    engineering: [
-      'Developed canvas serialization for template management.',
-      'Built admin panel and backend APIs for content management.',
-      'Integrated Flutter rendering for cross-platform availability.'
-    ],
-    keySystems: [
-      'Canvas-based design',
-      'Template management',
-      'Cross-platform rendering',
-      'Admin workflow'
-    ],
-    technologies: ['Next.js', 'React', 'Node.js', 'Express', 'Prisma', 'SQLite', 'Flutter'],
-    category: 'Full Stack'
-  },
+
+  // 7. Nirmil Financial Results Terminal
   {
     id: 'nirmil-financial-terminal',
     title: 'Nirmil Financial Results Terminal',
-    subtitle: 'AI-powered Financial Intelligence Tool',
-    problem: 'Developers and financial analysts need a streamlined tool to filter announcements based on configurable rules and automatically analyze them.',
-    architecture: 'Service Worker architecture integrated into a Chrome Extension (Manifest V3) backed by an Express server and Gemini.',
+    subtitle: 'Manifest V3 Chrome Extension & Structured Results Analysis Platform',
+    problem: 'Traders and developers require an instant, in-browser interface to filter announcement feeds using customizable rules and extract clean JSON balance sheet figures.',
+    architecture: 'Manifest V3 Chrome Extension powered by background Service Workers, paired with an Express/Node backend, React/Vite dashboard, and Gemini API.',
     engineering: [
-      'Implemented rule-based announcement filtering via CSV configurations.',
-      'Engineered automatic PDF downloading and Gemini-powered document analysis.',
-      'Built a developer-focused structured JSON extraction pipeline.'
+      'Built a high-performance Chrome Extension using Manifest V3 and background Service Worker architecture.',
+      'Implemented flexible rule-based announcement filtering driven by CSV configuration files.',
+      'Engineered automated PDF retrieval and Gemini-powered financial statement parsing.',
+      'Designed structured JSON output pipelines delivering clean quarterly financial data to frontend dashboards.'
     ],
     keySystems: [
-      'Chrome Extension integration',
-      'Rule-based filtering',
-      'Automatic document analysis',
-      'Structured extraction'
+      'Manifest V3 Service Worker',
+      'CSV-Configurable Rules Engine',
+      'In-Browser Announcement Extractor',
+      'Structured JSON Results API'
     ],
-    technologies: ['Node.js', 'Express', 'React', 'Vite', 'TypeScript', 'Gemini', 'Chrome Extension APIs'],
-    category: 'Developer Tools'
+    technologies: ['React', 'Vite', 'TypeScript', 'Node.js', 'Google Gemini', 'Chrome Extension APIs', 'Manifest V3'],
+    category: 'Developer Tools & Systems'
   },
+
+  // 8. DigiMaker Platform
   {
-    id: 'esavaari',
-    title: 'eSaVaari',
-    subtitle: 'Ride-Hailing Application',
-    problem: 'Providing a core digital workflow to seamlessly connect users with transportation services in real-time.',
-    architecture: 'Mobile application powered by scalable backend APIs for real-time location tracking and mobility management.',
+    id: 'digimaker',
+    title: 'DigiMaker — Banner Creation Platform',
+    subtitle: 'Multi-Platform Political Banner Studio with Web Admin & Flutter Mobile App',
+    problem: 'Campaign organizers and digital teams lacked a unified platform to design, serialize, and distribute customizable political banner templates across mobile and web.',
+    architecture: 'Full-stack multi-platform ecosystem: Next.js/React administrative portal, Express/Node API backend, Prisma ORM with SQLite, and Flutter mobile application.',
     engineering: [
-      'Developed the core digital workflow connecting riders and drivers.',
-      'Engineered scalable backend APIs to handle mobility operations.'
+      'Engineered a canvas-based design engine with full template serialization and dynamic text/image placement.',
+      'Developed administrative web dashboard for managing design catalogs, user permissions, and assets.',
+      'Integrated Flutter mobile application for on-the-go banner personalization and instant high-res rendering.',
+      'Built RESTful APIs and Prisma ORM schemas ensuring synchronized state across web and mobile.'
     ],
     keySystems: [
-      'Ride matching',
-      'Real-time tracking',
-      'Mobility management'
+      'Canvas Design & Serialization Engine',
+      'Administrative Template Management',
+      'Cross-Platform Flutter Rendering',
+      'Prisma Database Architecture'
     ],
-    technologies: ['Mobility', 'Mobile Application', 'Backend', 'APIs'],
-    category: 'Backend & APIs'
+    technologies: ['Next.js', 'React', 'Flutter', 'Dart', 'Node.js', 'Express', 'Prisma', 'SQLite', 'Canvas API'],
+    category: 'Full Stack & Enterprise'
+  },
+
+  // 9. Sidhicon Automation Suite
+  {
+    id: 'sidhicon-suite',
+    title: 'Enterprise Business Software Suite',
+    subtitle: 'Integrated Inventory, Quotation Engine & Certificate Automation Platform',
+    client: 'Sidhicon Automation Pvt. Ltd.',
+    deployment: 'Client Office Installation & Ongoing Operation',
+    problem: 'Industrial automation consultancy faced disconnected operational workflows across client quoting, parts inventory, and official material test certification.',
+    architecture: 'Custom enterprise application suite combining the corporate web presence, inventory management database, quotation generation engine, and material certificate compiler.',
+    engineering: [
+      'Engineered corporate web presence reflecting company engineering capabilities.',
+      'Developed real-time inventory management application tracking automation components and stock levels.',
+      'Built automated quotation generation software reducing turnaround time from days to minutes.',
+      'Created specialized material certificate generation software for compliance and quality assurance.'
+    ],
+    keySystems: [
+      'Inventory Control System',
+      'Automated Quotation Engine',
+      'Material Certificate Compiler',
+      'Corporate Web Portal'
+    ],
+    technologies: ['Full-Stack Web', 'Inventory Management', 'Document Generation', 'Quotation Automation', 'SQL Database'],
+    category: 'Full Stack & Enterprise'
+  },
+
+  // 10. Mascon Techneeds
+  {
+    id: 'mascon-cert-gen',
+    title: 'Material Certificate Generation System',
+    subtitle: 'Automated Industrial Material Certification & Compliance Documentation',
+    client: 'Mascon Techneeds',
+    deployment: 'Production Deployment: Gujarat, India',
+    problem: 'Manual generation of metallurgical and material test certificates was error-prone, labor-intensive, and exposed the manufacturer to compliance auditing risks.',
+    architecture: 'Data-driven documentation engine that validates raw material batch parameters and compiles standardized, audit-ready compliance certificates.',
+    engineering: [
+      'Automated the end-to-end generation of material inspection and test certificates.',
+      'Structured batch parameter schemas to enforce regulatory compliance and validation checks.',
+      'Designed print-ready PDF and document output with verification tracking.',
+      'Successfully deployed on-site to production facilities in Gujarat, India.'
+    ],
+    keySystems: [
+      'Automated Certificate Engine',
+      'Material Data Validation',
+      'Compliance Documentation',
+      'Batch Parameter Tracking'
+    ],
+    technologies: ['Automation', 'Document Generation', 'Data Validation', 'Compliance Tracking', 'SQL'],
+    category: 'Full Stack & Enterprise'
+  },
+
+  // 11. Anokhee Creations
+  {
+    id: 'anokhee-ecommerce',
+    title: 'E-commerce Platform & Admin Suite',
+    subtitle: 'Complete Consumer Retail Web Storefront with Back-Office Administration',
+    client: 'Anokhee Creations',
+    deployment: 'Production Client Deployment',
+    problem: 'Retail enterprise needed an end-to-end digital commerce solution with responsive shopping experiences and fine-grained administrative controls.',
+    architecture: 'Full-stack retail architecture comprising consumer-facing storefront, dynamic product catalog, shopping cart/checkout, and comprehensive administrative back-office.',
+    engineering: [
+      'Engineered complete consumer-facing e-commerce storefront with optimized mobile-first browsing.',
+      'Architected backend REST APIs for product taxonomy, pricing, inventory, and order fulfillment.',
+      'Built rich administrative panel giving operators full control over catalog updates, discounts, and customer inquiries.',
+      'Implemented secure data handling and performance optimization across the full stack.'
+    ],
+    keySystems: [
+      'Storefront Catalog & Cart Engine',
+      'Back-Office Administrative Panel',
+      'Product Taxonomy & Stock Control',
+      'Order Management Flow'
+    ],
+    technologies: ['Full-Stack', 'E-commerce', 'Admin Dashboard', 'REST APIs', 'Database Architecture', 'Responsive UI'],
+    category: 'Full Stack & Enterprise'
+  },
+
+  // 12. Redwings Logistics
+  {
+    id: 'redwings-logistics',
+    title: 'Logistics Management Platform',
+    subtitle: 'Enterprise Freight Management, Tracking & Operations Suite in Laravel',
+    client: 'Redwings Logistics',
+    deployment: 'Client Office Installation & Operations',
+    problem: 'Freight operations required a unified platform to coordinate consignments, track shipments across transit hubs, and manage daily freight billing.',
+    architecture: 'Laravel-powered logistics management web portal with an integrated administrative command center for end-to-end freight lifecycle tracking.',
+    engineering: [
+      'Developed high-performance logistics website and backend infrastructure using Laravel.',
+      'Built comprehensive administrative panel for freight rate calculation, consignment booking, and manifests.',
+      'Implemented shipment tracking system for tracking milestone updates and dispatch events.',
+      'Streamlined day-to-day logistics operations, document generation, and driver/vehicle assignments.'
+    ],
+    keySystems: [
+      'Freight Detail Management',
+      'Live Consignment Tracking',
+      'Daily Operations Dispatch Center',
+      'Administrative Back-Office'
+    ],
+    technologies: ['Laravel', 'PHP', 'MySQL', 'Freight Management', 'Shipment Tracking', 'REST APIs'],
+    category: 'Full Stack & Enterprise'
   }
 ];

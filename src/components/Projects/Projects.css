@@ -3,13 +3,55 @@
   position: relative;
 }
 
+.projects-header-wrapper {
+  margin-bottom: 3rem;
+}
+
 .section-title {
   font-size: 2.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   color: var(--text-primary);
   display: inline-block;
   border-bottom: 2px solid var(--accent-cyan);
   padding-bottom: 0.5rem;
+}
+
+.projects-section-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.category-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+  background: rgba(0, 240, 255, 0.08);
+  border-color: rgba(0, 240, 255, 0.3);
+  color: var(--text-primary);
+}
+
+.filter-btn.active {
+  background: rgba(0, 240, 255, 0.15);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
 }
 
 .projects-grid {
@@ -69,17 +111,51 @@
   padding-bottom: 1.5rem;
 }
 
+.project-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
 .project-category {
   color: var(--accent-matrix);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.8rem;
-  margin-bottom: 0.5rem;
   display: block;
 }
 
 .project-category::before {
   content: '>> ';
+}
+
+.project-client-badge {
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  background: rgba(0, 240, 255, 0.05);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+}
+
+.project-deployment-info {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #38bdf8;
+  margin-top: 0.75rem;
+  background: rgba(56, 189, 248, 0.05);
+  border-left: 2px solid #38bdf8;
+  padding: 0.35rem 0.75rem;
+}
+
+.deployment-pin {
+  color: #38bdf8;
+  flex-shrink: 0;
 }
 
 .project-title {

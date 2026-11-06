@@ -6,29 +6,56 @@ export const experiences: Experience[] = [
     role: 'Senior Software Engineer',
     company: 'Techeeez',
     type: 'Full-time',
-    duration: 'Jun 2026 – Present',
+    duration: 'June 2026 – Present',
     location: 'Goregaon, Maharashtra · Hybrid',
-    description: 'Designing and developing scalable, production-ready web and mobile applications using modern software engineering practices.',
+    description: 'Design and develop scalable, production-ready web and mobile applications across the complete software development lifecycle.',
     achievements: [
-      'Working across the complete software development lifecycle, from architecture to deployment.',
-      'Developing RESTful APIs and backend services integrated with relational databases and ORMs.',
-      'Building responsive and user-friendly frontend interfaces while integrating third-party services.',
-      'Leading development of complex web and mobile applications utilizing cloud infrastructure.'
+      'Contribute across the complete SDLC, including requirements analysis, system architecture, implementation, automated testing, deployment, and ongoing maintenance.',
+      'Develop robust backend services, REST APIs, and database-driven applications with high data integrity and performance.',
+      'Build responsive, intuitive frontend user interfaces and maintainable, modular application architectures.',
+      'Work with a modern tech stack encompassing Node.js, React, Next.js, Flutter, PostgreSQL, MySQL, Prisma, and Firebase.'
     ],
-    technologies: ['Node.js', 'React/Next.js', 'Flutter', 'PostgreSQL/MySQL', 'Prisma', 'Firebase']
+    technologies: ['Node.js', 'React', 'Next.js', 'Flutter', 'PostgreSQL', 'MySQL', 'Prisma', 'Firebase']
+  },
+  {
+    id: 'independent-consultant',
+    role: 'Independent Software Consultant & Full-Stack Developer',
+    company: 'Independent Client Engagements',
+    type: 'Consultant / Contract',
+    duration: '2025 – Present',
+    location: 'Maharashtra, India · Multi-Location Deployments',
+    description: 'Independently manage direct client engagements end-to-end, delivering tailored enterprise software and industrial automation systems.',
+    achievements: [
+      'Independently manage client meetings, requirement gathering, technical consultation, project estimation, quotation preparation, and scope negotiation.',
+      'Analyze business workflows and determine optimal technology stacks, system architectures, database schemas, and API integration paths.',
+      'Design, engineer, and deploy hardware-integrated industrial applications (DWS, Pick-to-Light, scanners, cameras, and local database synchronizations).',
+      'Manage end-to-end delivery: custom software development, hardware interfacing, multi-location installations, production rollouts, client training, and 24/7 technical support.'
+    ],
+    technologies: ['Industrial Hardware', 'Pick-to-Light', 'DWS Systems', 'Barcode Scanners', 'Cameras', 'React', 'Node.js', 'Laravel', 'Python', 'SQL'],
+    clients: [
+      'Shadowfax',
+      'Wabtec Corporation',
+      'KAMA Ayurveda',
+      'Delite Engineering Pvt. Ltd.',
+      'Sidhicon Automation Pvt. Ltd.',
+      'Mascon Techneeds',
+      'Anokhee Creations',
+      'Redwings Logistics'
+    ]
   },
   {
     id: 'aman-satija',
     role: 'Junior Software Engineer',
     company: 'Aman Satija and Co.',
     type: 'Full-time',
-    duration: 'Oct 2022 – May 2026',
+    duration: 'October 2022 – May 2026',
     location: 'Goregaon, Maharashtra · Hybrid',
-    description: 'Worked across frontend and backend development while building a strong foundation in software engineering and application architecture.',
+    description: 'Engineered frontend and backend components for production web applications and database-driven business systems.',
     achievements: [
-      'Developed robust web applications and backend systems.',
-      'Built applications using Laravel and Node.js with complex database architectures.',
-      'Contributed significantly to collaborative software development projects and API integrations.'
+      'Developed frontend and backend components for web applications using JavaScript, Python, PHP, and SQL.',
+      'Architected backend functionality, database-driven workflows, and third-party application integrations.',
+      'Developed core application features using Laravel and Node.js frameworks.',
+      'Contributed to code debugging, ongoing maintenance, and production implementation of robust software solutions.'
     ],
     technologies: ['JavaScript', 'Python', 'PHP', 'SQL', 'Laravel', 'Node.js']
   },
@@ -37,41 +64,41 @@ export const experiences: Experience[] = [
     role: 'Machine Learning Intern',
     company: 'CodSoft',
     type: 'Internship',
-    duration: 'Sep 2023 – Oct 2023',
+    duration: 'September 2023 – October 2023',
     location: 'Remote',
-    description: 'Gained practical exposure to machine-learning workflows and data analysis.',
+    description: 'Worked on Python-based machine learning development tasks, data preprocessing, and analytical visualization.',
     achievements: [
-      'Worked with Python and data visualization libraries.',
-      'Implemented fundamental machine learning models and data pipelines.'
+      'Implemented Python-based machine learning workflows and exploratory data analysis.',
+      'Applied feature engineering, data cleaning, and visualization techniques for model evaluation.'
     ],
-    technologies: ['Python', 'Machine Learning', 'Data Visualization']
+    technologies: ['Python', 'Machine Learning', 'Data Processing', 'Data Visualization']
   },
   {
     id: 'writejet',
-    role: 'Web Developer Intern',
+    role: 'Web Developer',
     company: 'WriteJet',
-    type: 'Internship',
-    duration: 'May 2023 – Jun 2023',
+    type: 'Internship / Contract',
+    duration: 'May 2023 – June 2023',
     location: 'Remote',
-    description: 'Contributed to the development of an EdTech platform.',
+    description: 'Contributed to the frontend engineering of an educational technology (EdTech) web platform.',
     achievements: [
-      'Worked on frontend development using HTML, CSS, and Bootstrap.',
-      'Improved responsive design and user interface functionality.'
+      'Engineered clean, responsive web interfaces using HTML, CSS, and Bootstrap.',
+      'Collaborated on improving UX performance and cross-device compatibility.'
     ],
-    technologies: ['HTML', 'CSS', 'Bootstrap']
+    technologies: ['HTML5', 'CSS3', 'Bootstrap', 'Responsive Web Design']
   },
   {
     id: 'sdac',
-    role: 'Java Web Developer Intern',
+    role: 'Java Web Developer',
     company: 'SDAC Infotech',
     type: 'Internship',
-    duration: 'Apr 2023 – May 2023',
-    location: 'Borivali · On-site',
-    description: 'Developed hybrid applications and backend systems.',
+    duration: 'April 2023 – May 2023',
+    location: 'Borivali, Maharashtra · On-site',
+    description: 'Contributed to an enterprise Product Analysis System and database integration.',
     achievements: [
-      'Worked on hybrid application development using Java.',
-      'Developed key projects including a Product Analysis System.'
+      'Developed Java-based web application backend components and integrated MySQL relational databases.',
+      'Crafted clean user application interfaces using CSS and standard web standards.'
     ],
-    technologies: ['Java', 'Web Development']
+    technologies: ['Java', 'MySQL', 'Web Development', 'CSS']
   }
 ];

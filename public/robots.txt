@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://saurabh-singh-portfolio-03.web.app/sitemap.xml
-
+Sitemap: https://saurabh-singh-portfolio-03.web.app/sitemap_index.xml
